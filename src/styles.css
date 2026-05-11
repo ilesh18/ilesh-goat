@@ -125,6 +125,7 @@
     font-family: var(--font-display);
     -webkit-font-smoothing: antialiased;
     overflow-x: hidden;
+    cursor: none;
   }
   ::selection {
     background: var(--ember);
