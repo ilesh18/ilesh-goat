@@ -30,7 +30,7 @@ const groups = [
   { title: "Frontend", filter: ["React", "Next.js", "Tailwind CSS", "HTML5", "CSS3"] },
   { title: "Data & AI", filter: ["NumPy", "Pandas", "Matplotlib"] },
   { title: "Databases", filter: ["MongoDB", "MySQL", "Firebase"] },
-  { title: "Cloud & Infra", filter: ["Google Cloud", "Vercel", "Render"] },
+  { title: "Cloud & Infra", filter: ["Google Cloud", "Vercel", "Render", "Cloudflare"] },
   { title: "Tooling", filter: ["Git", "GitHub"], span: "md:col-span-2" },
 ];
 

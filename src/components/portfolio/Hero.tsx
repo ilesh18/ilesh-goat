@@ -3,6 +3,8 @@ import { useEffect, useState } from "react";
 import { ArrowRight, Download, Mail, Terminal } from "lucide-react";
 import { MagneticButton } from "./MagneticButton";
 
+const STORAGE_KEY = "portfolio_views";
+
 const titles = [
   "Backend Engineer",
   "AI Developer",
@@ -38,6 +40,14 @@ function useTypewriter() {
 
 export function Hero() {
   const text = useTypewriter();
+  const [views, setViews] = useState(0);
+
+  useEffect(() => {
+    const count = parseInt(localStorage.getItem(STORAGE_KEY) || "0") + 1;
+    localStorage.setItem(STORAGE_KEY, count.toString());
+    setViews(count);
+  }, []);
+
   return (
     <section id="home" className="relative min-h-screen flex items-center pt-28 pb-20">
       <div className="mx-auto w-full max-w-7xl px-6 grid lg:grid-cols-12 gap-10 items-center">
@@ -109,6 +119,7 @@ export function Hero() {
             <Stat value="12+" label="Projects" />
             <Stat value="01" label="Hackathon Won" />
             <Stat value="∞" label="Commits" />
+            <Stat value={views.toString()} label="Profile Viewed" />
           </div>
         </div>
 

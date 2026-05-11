@@ -1,4 +1,4 @@
-@import "tailwindcss" source(none);
+@import "tailwindcss";
 @source "../src";
 @import "tw-animate-css";
 
@@ -139,6 +139,7 @@
     border-radius: 8px;
   }
   ::-webkit-scrollbar-thumb:hover { background: var(--ember); }
+  a, button, [role="button"] { cursor: none; }
 }
 
 @layer utilities {
