@@ -20,6 +20,7 @@ const skills = [
   { name: "Google Cloud", cat: "Cloud" },
   { name: "Vercel", cat: "Cloud" },
   { name: "Render", cat: "Cloud" },
+  { name: "Cloudflare", cat: "Cloud" },
   { name: "Git", cat: "DevOps" },
   { name: "GitHub", cat: "DevOps" },
 ];
